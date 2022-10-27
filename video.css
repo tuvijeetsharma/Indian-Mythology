@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Langar', cursive;
+}
+
+body {
+    background-image: url("http://indianmythology.com/finish/images/bg.jpg");
+}
+
+.heading {
+    text-align: center;
+}
+
+.ml15 {
+    font-weight: 800;
+    font-size: 3.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .ml15 .word {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  .menu-bar{
+    background-color: black;
+    width:100%;
+    height: 80px;
+    text-align: center;
+    font-family: 1rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 20px;
+}
+/* placing menus in a row */
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+    padding: 10px;
+}
+/* individual menus space */
+.menu-bar ul li {
+    width: 140px;
+    margin: 10px;
+    padding: 10px;
+    
+}
+/* removing link underline */
+.menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+    
+}
+.menu-bar ul li a:hover{
+    color: white;
+    font-weight: 600;
+}
+/* when home is active */
+.active .menu-bar ul li a:hover{
+    background-color: rgba(138, 69, 69,0.5);
+    border-radius: 3px;
+}
+
+ .menu-bar .fas :hover{
+    cursor: pointer;
+    color: rgb(0,0,0);
+} 
+.sub-menu-1 {
+    display: none;
+}
+/* layout of submenu */
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: gray;
+    margin-top: 10px;
+    margin-left: -15px;
+    border-radius: 15px;
+}    
+/* Displaying submenu from horizontal to block */
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+/* display card */
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0px;
+    text-align: center;
+} 
+/* removing fr last element in card */
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color: rgb(0,0,0);
+}
+
+.fa-angle-right{
+    float: right;
+    margin-top: 5px;
+}
+/* hover services */
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 160px;
+    background: rgba(168, 83, 83,0.9);
+    border-radius: 15px;
+    
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 55px;
+
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+}
+
+#header-text>p {
+    width: 300px;
+}
+
+nav {
+    margin: 2% 7%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#scroll {
+    width: 80px;
+    position: relative;
+    animation: mymove 3s infinite;
+    animation-play-state: running;
+}
+
+@keyframes mymove {
+    from {
+        top: 15px;
+    }
+
+    to {
+        top: 100px;
+    }
+}
+
+.button {
+    background-color: #ec3e5f;
+    padding: 7px;
+}
+
+ .head2 {
+    text-align: center;
+    font-size: 50px;
+} 
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#play {
+    display: inline;
+}
+
+.movies {
+    flex-wrap: wrap;
+    min-height: 300px;
+    margin: 3% 15%;
+}
+
+.movie-image {
+    height: 240px;
+    width: 400px;
+}
+
+.movie-image>img {
+    width: 100%;
+}
+
+.movie-text>p {
+    margin: 22px 0px
+}
+
+.movie-text {
+    width: 400px;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    height: 90px;
+}
+
+@media only screen and (max-width:600px) {
+    .wrap-reverse {
+        flex-wrap: wrap-reverse;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .button {
+        margin: 0% 2%;
+    }
+}
+
+.image {
+    margin-top: 10px;
+    height: 340px;
+}
+
+#highlight {
+	background-image: linear-gradient(#ffd900, #ffd900);
+	background-repeat: no-repeat;
+	background-position: 0% 100%;
+	background-size: 100% 2px;
+	transition: background-size .5s, background-position .3s ease-in .5s;
+}
+
+#highlight:hover {
+	background-size: 100% 100%;
+	background-position: 0% 0%;
+	transition: background-position .5s, background-size .3s ease-in .5s;
+}
+

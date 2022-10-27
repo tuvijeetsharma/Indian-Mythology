@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    background-image: url("http://indianmythology.com/finish/images/bg.jpg");
+}
+
+.menu-bar{
+    background-color: black;
+    width:100%;
+    text-align: center;
+    font-family: 1rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 20px;
+}
+/* placing menus in a row */
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+/* individual menus space */
+.menu-bar ul li {
+    width: 140px;
+    padding: 10px;
+    margin: 5px;
+}
+/* removing link underline */
+.menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+    
+}
+.menu-bar ul li a:hover{
+    color: white;
+    font-weight: 600;
+}
+/* when home is active */
+.active .menu-bar ul li a:hover{
+    background-color: rgba(138, 69, 69,0.5);
+    border-radius: 3px;
+}
+
+ .menu-bar .fas :hover{
+    cursor: pointer;
+    color: rgb(0,0,0);
+} 
+.sub-menu-1 {
+    display: none;
+}
+/* layout of submenu */
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: gray;
+    margin-top: 10px;
+    margin-left: -15px;
+    border-radius: 15px;
+}    
+/* Displaying submenu from horizontal to block */
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+/* display card */
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0px;
+    text-align: center;
+} 
+/* removing fr last element in card */
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color: rgb(0,0,0);
+}
+
+.fa-angle-right{
+    float: right;
+    margin-top: 5px;
+}
+/* hover services */
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 160px;
+    background: rgba(168, 83, 83,0.9);
+    border-radius: 15px;
+}
+ 
+
+h4 {
+    display: none;
+    text-align: center;
+    font-size: 22px;
+}
+
+.container {
+  max-width: 800px;
+  height: auto;
+  background: darkgray;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.para {
+    background-color: darkgray;
+    color: white;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+p {
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right,white, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input,.msg .area {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.5s;
+}
+
+.login .input {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.login .input:last-child {
+    margin-right: 0;
+}
+
+.msg .area {
+    height: 200px;
+}
+
+.input:focus, .msg .area:focus {
+    border: 2px solid black;
+}
+
+.submit {
+    width: 100%;
+    text-align: center;
+}
+
+.submit .btn {
+    background: black;
+    padding: 12px 85px;
+    font-size: 19px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+

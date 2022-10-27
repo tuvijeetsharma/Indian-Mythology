@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./feedback.css">
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><i class="fas fa-home"></i><a href="./index.html">HOME</a></li>
+
+            <li><i class="fab fa-servicestack"></i><a href="#">Gods</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li ><a href="./shiva.html">Lord Shiva</a></li>
+                        <li ><a href="./krishna.html">Lord Krishna</a></li>
+                        <li ><a href="./ganesh.html">Lord Ganesh</a></li>
+                        <li ><a href="./jagannath.html">Lord Jagannath</a></li>
+                        <li ><a href="./brahma.html">Lord Brahma</a></li>
+                        </li>
+                    </ul>
+
+                </div>
+            </li>
+            <li><i class="fas fa-users"></i><a href="./story.html">Story</a></li>
+            <li><i class="fas fa-handshake"></i><a href="./video.html">Movie</a></li>
+            <li><i class="fas fa-rupee-sign"></i><a href="./places.html">Places</a></li>
+            <li><i class="fas fa-edit"></i><a href="./creatures.html">Creatures</a></li>
+                <li><i class="fab fa-servicestack"></i><a href="#">Gallery</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li ><a href="./creaturephoto.html">Creatures</a></li>
+                            <li ><a href="./godphoto.html">Gods</a></li>
+                            <li ><a href="./placesphoto.html">Places</a></li>
+                            </li>
+                        </ul>
+    
+                    </div>
+                    <li><i class="fas fa-phone"></i><a href="./feedback.html">Feedback</a></li>
+                    <li><i class="fas fa-user"></i><a href="./contact.html">Contact</a>
+    </div> 
+ <br>
+    <h1>
+        FeedBack Form!!
+    </h1>
+    <br>
+<div class="container">
+    <p>FeedBack</p>
+
+    <div class="login">
+        <input type="text" name="" placeholder="Your Name" class="input">
+        <input type="text" name="" placeholder="Contact No" class="input">
+    </div>
+
+    <div class="subject">
+        <input type="text" name="" placeholder="Your Email" class="input">
+    </div>
+
+    <div class="msg">
+        <textarea name=""  cols="20" rows="5" class="area" placeholder="Leave A Message"></textarea>
+    </div>
+
+    <div class="submit" onclick="send()" id="submit">
+     <form>
+        <a href="#" class="btn">Send</a>
+    </form>
+    </div>
+    <h4 id="thanks">Thank For Your Valuable FeedBack.</h4>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+<script>
+    function send() {
+         document.getElementById("submit").style.display="none";
+         document.getElementById("thanks").style.display="inherit";
+    }
+</script>
+
+
+</body>
+</html>

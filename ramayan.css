@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,800;1,400&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    text-align: center;
+    background-image: url("http://indianmythology.com/finish/images/bg.jpg");
+    font-family: 'Alegreya', serif;
+    align-items: center;
+}
+
+.highlight {
+    background-color: #fff2ac;
+    background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
+}
+
+img{
+    border-radius: 20%;
+    align-items: center;
+}
+
+.button {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline;
+    background-color: black;
+    padding: 7px;
+   cursor: pointer;
+   border-radius: 10px;
+}
+
+p {
+    font-size: 22px;
+}
+
+h3{
+    color: red;
+}
+
+.img {
+    width: 500px;
+    height: 300px;
+}
+
+.mahabharat{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+img{
+    border: 2px solid black;
+}
+img:hover{
+    transform: scale(1.5);
+    }
+
+    .menu-bar{
+        background-color: black;
+        width:100%;
+        text-align: center;
+        font-family: 1rem;
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    /* placing menus in a row */
+    .menu-bar ul{
+        display: inline-flex;
+        list-style: none;
+        color: #fff;
+    }
+    /* individual menus space */
+    .menu-bar ul li {
+        width: 140px;
+        margin: 10px;
+        padding: 10px;
+        
+    }
+    /* removing link underline */
+    .menu-bar ul li a {
+        text-decoration: none;
+        color: white;
+        margin-left: 5px;
+        
+    }
+    .menu-bar ul li a:hover{
+        color: white;
+        font-weight: 600;
+    }
+    /* when home is active */
+    .active .menu-bar ul li a:hover{
+        background-color: rgba(138, 69, 69,0.5);
+        border-radius: 3px;
+    }
+    /* make icon hovering change color */
+    /* .menu-bar .fas :hover{
+        cursor: pointer;
+        color: rgb(0,0,0);
+    } */
+    .sub-menu-1 {
+        display: none;
+    }
+    /* layout of submenu */
+    .menu-bar ul li:hover .sub-menu-1{
+        display: block;
+        position: absolute;
+        background: gray;
+        margin-top: 10px;
+        margin-left: -15px;
+        border-radius: 15px;
+    }    
+    /* Displaying submenu from horizontal to block */
+    .menu-bar ul li:hover .sub-menu-1 ul{
+        display: block;
+        margin: 10px;
+    }
+    /* display card */
+    .menu-bar ul li:hover .sub-menu-1 ul li{
+        width: 150px;
+        padding: 10px;
+        border-bottom: 1px dotted #fff;
+        background: transparent;
+        border-radius: 0px;
+        text-align: center;
+    } 
+    /* removing fr last element in card */
+    .menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+        border-bottom: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+        color: rgb(0,0,0);
+    }
+    
+    .fa-angle-right{
+        float: right;
+        margin-top: 5px;
+    }
+    /* hover services */
+    .sub-menu-2{
+        display: none;
+    }
+    .hover-me:hover .sub-menu-2{
+        position: absolute;
+        display: block;
+        margin-top: -40px;
+        margin-left: 160px;
+        background: rgba(168, 83, 83,0.9);
+        border-radius: 15px;
+        
+    }
+    
+    .ml9 {
+        position: relative;
+        font-weight: 200;
+        font-size: 2.8em;
+      }
+      
+      .ml9 .text-wrapper {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.2em;
+        padding-right: 0.05em;
+        padding-bottom: 0.1em;
+        overflow: hidden;
+      }
+      
+      .ml9 .letter {
+        transform-origin: 50% 100%;
+        display: inline-block;
+        line-height: 1em;
+      }
+
+#top{
+    size: 5px;
+    background-color: red;
+    
+}
+      
+    
+      #darbar{
+          width: 400px;
+          align-self: center;
+          align-items: center;
+      }
